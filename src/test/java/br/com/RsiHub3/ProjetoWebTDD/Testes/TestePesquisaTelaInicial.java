@@ -17,17 +17,17 @@ private WebDriver driver;
 	
 	@Before
 	public void SetUp () {
-		driver = GerenciandoChrome.AbrirPaginaInicial("http://advantageonlineshopping.com/#/");
+		driver = GerenciandoChrome.abrirPaginaInicial("http://advantageonlineshopping.com/#/");
 	}
 	
 	@After
 	public void tearDown () {
-		GerenciandoChrome.FecharChrome();
+		GerenciandoChrome.fecharChrome();
 	}
 	
 	@Test
 	public void PesquisaPelaTelaInicialCOMSucesso () {
-		assertEquals("HP USB 3 BUTTON OPTICAL MOUSE", new PaginaInicial(driver).PesquisaTelaInicialMouse().SelecionandoMouseEValidando());
+		assertEquals("HP USB 3 BUTTON OPTICAL MOUSE", new PaginaInicial(driver).pesquisaTelaInicialMouse().selecionandoMouseEValidando());
 	}
 	
 	@Test

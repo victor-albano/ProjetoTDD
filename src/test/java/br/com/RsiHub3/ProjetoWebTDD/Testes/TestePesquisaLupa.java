@@ -16,21 +16,21 @@ private WebDriver driver;
 	
 	@Before
 	public void SetUp () {
-		driver = GerenciandoChrome.AbrirPaginaInicial("http://advantageonlineshopping.com/#/");
+		driver = GerenciandoChrome.abrirPaginaInicial("http://advantageonlineshopping.com/#/");
 	}
 	
 	@After
 	public void tearDown () {
-		GerenciandoChrome.FecharChrome();
+		GerenciandoChrome.fecharChrome();
 	}
 	
 	@Test
 	public void PesquisaLupaCOMSucesso () {
-		assertEquals("HP USB 3 BUTTON OPTICAL MOUSE", new PaginaInicial(driver).PesquisaLupaMouse("Mouse").SelecionandoMouseEValidando());
+		assertEquals("HP USB 3 BUTTON OPTICAL MOUSE", new PaginaInicial(driver).pesquisaLupaMouse("Mouse").selecionandoMouseEValidando());
 	}
 	
 	@Test
 	public void PesquisaLupaSEMSucesso () {
-		assertEquals("No results for \"Produto\"", new PaginaInicial(driver).PesquisaLupaMouse("Produto").MensagemProdutoNaoEncontrado());
+		assertEquals("No results for \"Produto\"", new PaginaInicial(driver).pesquisaLupaMouse("Produto").mensagemProdutoNaoEncontrado());
 	}
 }

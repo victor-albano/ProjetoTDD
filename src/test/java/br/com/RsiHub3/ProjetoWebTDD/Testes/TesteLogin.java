@@ -16,21 +16,21 @@ private WebDriver driver;
 	
 	@Before
 	public void SetUp () {
-		driver = GerenciandoChrome.AbrirPaginaInicial("http://advantageonlineshopping.com/#/");
+		driver = GerenciandoChrome.abrirPaginaInicial("http://advantageonlineshopping.com/#/");
 	}
 	
 	@After
 	public void tearDown () {
-		GerenciandoChrome.FecharChrome();
+		GerenciandoChrome.fecharChrome();
 	}
 	
 	@Test
 	public void TesteLoginSEMSucesso () throws Exception {
-		assertEquals("Incorrect user name or password.", new PaginaInicial(driver).PreencherLogin(2, 2).EsperarPorMensagemDeValidacao());
+		assertEquals("Incorrect user name or password.", new PaginaInicial(driver).preencherLogin(2, 2).esperarPorMensagemDeValidacao());
 	}
 	
 	@Test
 	public void LoginCOMSucesso () throws Exception {
-		assertEquals("Roger", new PaginaInicial(driver).PreencherLogin(1, 1).ValidacaoLoginEfetuado());
+		assertEquals("Roger", new PaginaInicial(driver).preencherLogin(1, 1).validacaoLoginEfetuado());
 	}
 }

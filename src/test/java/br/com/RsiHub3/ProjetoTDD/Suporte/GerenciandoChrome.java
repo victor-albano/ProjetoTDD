@@ -10,7 +10,7 @@ public class GerenciandoChrome {
 
 	private static WebDriver driver;
 	
-	public static WebDriver AbrirPaginaInicial (String link) {
+	public static WebDriver abrirPaginaInicial (String link) {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/ChromeWebDriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -19,7 +19,7 @@ public class GerenciandoChrome {
 		return driver;
 	}
 	
-	public static void FecharChrome () {
+	public static void fecharChrome () {
 		driver.quit();
 	}
 }
