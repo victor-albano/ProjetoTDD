@@ -93,32 +93,32 @@ public class PaginaInicial extends BasePage{
 		return this;
 	}
 	
-	public PaginaInicial clicarSignIn () {
+	private PaginaInicial clicarSignIn () {
 		driver.findElement(By.id("sign_in_btnundefined")).click();
 		return this;
 	}
 	
-	public PaginaInicial clicarLupa () {
+	private PaginaInicial clicarLupa () {
 		driver.findElement(By.id("menuSearch")).click();
 		return this;
 	}
 	
-	public PaginaInicial digitarPesquisa (String mouse) {
+	private PaginaInicial digitarPesquisa (String mouse) {
 		driver.findElement(By.id("autoComplete")).sendKeys(mouse);
 		return this;
 	}
 	
-	public PaginaPesquisaMouse clicarEnterNaPesquisa () {
+	private PaginaPesquisaMouse clicarEnterNaPesquisa () {
 		driver.findElement(By.id("autoComplete")).sendKeys(Keys.ENTER);
 		return new PaginaPesquisaMouse(driver);
 	}
 	
-	public PaginaPesquisaMouse clicarNoIconeMouseTelaInicial () {
+	private PaginaPesquisaMouse clicarNoIconeMouseTelaInicial () {
 		driver.findElement(By.id("miceTxt")).click();
 		return new PaginaPesquisaMouse(driver);
 	}
 	
-	public PaginaDeCadastro clicarBotaoCreateNewAccount () {
+	private PaginaDeCadastro clicarBotaoCreateNewAccount () {
 		driver.findElement(By.xpath("//a[@class='create-new-account ng-scope']")).click();
 		driver.findElement(By.xpath("//a[@class='create-new-account ng-scope']")).click();
 //		Actions actions = new Actions(driver);
@@ -126,14 +126,14 @@ public class PaginaInicial extends BasePage{
 		return new PaginaDeCadastro(driver);
 	}
 	
-	public PaginaInicial pegarUsuarioExcel (int linha) throws Exception {
+	private PaginaInicial pegarUsuarioExcel (int linha) throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Planilha1");
 		//ExcelUtils.getCellData(linha, 0);
 		driver.findElement(By.name("username")).sendKeys(ExcelUtils.getCellData(linha, 0));
 		return this;
 	}
 	
-	public PaginaInicial pegarSenhaExcel (int linhaSenha ) throws Exception {
+	private PaginaInicial pegarSenhaExcel (int linhaSenha ) throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Planilha1");
 		driver.findElement(By.name("password")).sendKeys(ExcelUtils.getCellData(linhaSenha, 1));
 		return this;

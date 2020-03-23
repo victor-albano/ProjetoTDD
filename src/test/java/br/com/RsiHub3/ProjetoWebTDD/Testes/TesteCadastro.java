@@ -25,7 +25,7 @@ public class TesteCadastro {
 		GerenciandoChrome.fecharChrome();
 	}
 		
-	@Test
+	//@Test
 	public void PreencherCadastroCOMSucesso () throws InterruptedException {
 		new PaginaInicial(driver).clicarJanelaDeLogin().clicarCreateNewAccount()
 		.fazerCadastro("Victor_v17", "Abc4", "victor_v17@gmail.com", "Victor", "Albano",
