@@ -30,6 +30,7 @@ public class PaginaInicial extends BasePage{
 	}
 	
 	public String EsperarPorMensagemDeValidacao () {
+		ClicarSignIn();
 		FluentWait wait = new FluentWait(driver);
 		wait.withTimeout(15000, TimeUnit.MILLISECONDS);
 		wait.pollingEvery(250, TimeUnit.MILLISECONDS);
