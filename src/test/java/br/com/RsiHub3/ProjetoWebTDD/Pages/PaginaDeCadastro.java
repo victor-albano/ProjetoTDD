@@ -77,12 +77,12 @@ public class PaginaDeCadastro extends BasePage{
 	}
 	
 	private PaginaDeCadastro digitarSobrenome (String sobrenome) {
-		driver.findElement(By.name("last_nameRegisterPage")).sendKeys("Fagundes Vasconcelos");
+		driver.findElement(By.name("last_nameRegisterPage")).sendKeys(sobrenome);
 		return this;
 	}
 	
 	private PaginaDeCadastro digitarTelefone (String telefone) {
-		driver.findElement(By.name("phone_numberRegisterPage")).sendKeys("11987654321");
+		driver.findElement(By.name("phone_numberRegisterPage")).sendKeys(telefone);
 		return this;
 	}
 	

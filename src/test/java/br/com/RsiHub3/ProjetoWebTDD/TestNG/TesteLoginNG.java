@@ -1,25 +1,25 @@
-package br.com.RsiHub3.ProjetoWebTDD.Testes;
+package br.com.RsiHub3.ProjetoWebTDD.TestNG;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import br.com.RsiHub3.ProjetoTDD.Suporte.GerenciandoChrome;
 import br.com.RsiHub3.ProjetoWebTDD.Pages.PaginaInicial;
 
-public class TesteLogin {
-
-private WebDriver driver;
+public class TesteLoginNG {
 	
-	@Before
+	private WebDriver driver;
+	
+	@BeforeMethod
 	public void SetUp () {
 		driver = GerenciandoChrome.abrirPaginaInicial("http://advantageonlineshopping.com/#/");
 	}
 	
-	@After
+	@AfterMethod
 	public void tearDown () {
 		GerenciandoChrome.fecharChrome();
 	}
