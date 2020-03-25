@@ -2,36 +2,58 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27472" started-at="2020-03-25T10:03:42 BRT" finished-at="2020-03-25T10:04:10 BRT">
+  <suite name="Default suite" duration-ms="60546" started-at="2020-03-25T15:50:47 BRT" finished-at="2020-03-25T15:51:48 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27472" started-at="2020-03-25T10:03:42 BRT" finished-at="2020-03-25T10:04:10 BRT">
-      <class name="br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLoginNG">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLoginNG@45afc369]" name="SetUp" is-config="true" duration-ms="10760" started-at="2020-03-25T10:03:42 BRT" finished-at="2020-03-25T10:03:53 BRT">
+    <test name="Default test" duration-ms="60546" started-at="2020-03-25T15:50:47 BRT" finished-at="2020-03-25T15:51:48 BRT">
+      <class name="br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG">
+        <test-method status="PASS" signature="setUpReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586]" name="setUpReport" is-config="true" duration-ms="77" started-at="2020-03-25T15:50:47 BRT" finished-at="2020-03-25T15:50:47 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586]" name="SetUp" is-config="true" duration-ms="11823" started-at="2020-03-25T15:50:47 BRT" finished-at="2020-03-25T15:50:59 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="LoginCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLoginNG@45afc369]" name="LoginCOMSucesso" duration-ms="2402" started-at="2020-03-25T10:03:53 BRT" finished-at="2020-03-25T10:03:55 BRT">
+        <test-method status="PASS" signature="PreencherCadastroCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586]" name="PreencherCadastroCOMSucesso" duration-ms="19044" started-at="2020-03-25T15:50:59 BRT" finished-at="2020-03-25T15:51:18 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginCOMSucesso -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLoginNG@45afc369]" name="tearDown" is-config="true" duration-ms="920" started-at="2020-03-25T10:03:55 BRT" finished-at="2020-03-25T10:03:56 BRT">
+        </test-method> <!-- PreencherCadastroCOMSucesso -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586]" name="tearDown" is-config="true" duration-ms="1419" started-at="2020-03-25T15:51:18 BRT" finished-at="2020-03-25T15:51:20 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreencherCadastroCOMSucesso status=SUCCESS method=TestCadastroNG.PreencherCadastroCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLoginNG@45afc369]" name="SetUp" is-config="true" duration-ms="10046" started-at="2020-03-25T10:03:56 BRT" finished-at="2020-03-25T10:04:06 BRT">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586]" name="SetUp" is-config="true" duration-ms="10147" started-at="2020-03-25T15:51:20 BRT" finished-at="2020-03-25T15:51:30 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="TesteLoginSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLoginNG@45afc369]" name="TesteLoginSEMSucesso" duration-ms="2126" started-at="2020-03-25T10:04:06 BRT" finished-at="2020-03-25T10:04:08 BRT">
+        <test-method status="PASS" signature="PreencherCadastroSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586]" name="PreencherCadastroSEMSucesso" duration-ms="16698" started-at="2020-03-25T15:51:30 BRT" finished-at="2020-03-25T15:51:46 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TesteLoginSEMSucesso -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLoginNG@45afc369]" name="tearDown" is-config="true" duration-ms="1185" started-at="2020-03-25T10:04:08 BRT" finished-at="2020-03-25T10:04:10 BRT">
+        </test-method> <!-- PreencherCadastroSEMSucesso -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586]" name="tearDown" is-config="true" duration-ms="1110" started-at="2020-03-25T15:51:46 BRT" finished-at="2020-03-25T15:51:47 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreencherCadastroSEMSucesso status=SUCCESS method=TestCadastroNG.PreencherCadastroSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLoginNG -->
+        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG@12028586]" name="tearDownReport" is-config="true" duration-ms="202" started-at="2020-03-25T15:51:47 BRT" finished-at="2020-03-25T15:51:48 BRT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- br.com.RsiHub3.ProjetoWebTDD.TestNG.TestCadastroNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

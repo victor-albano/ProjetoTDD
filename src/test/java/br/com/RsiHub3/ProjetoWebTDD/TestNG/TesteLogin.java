@@ -1,10 +1,9 @@
 package br.com.RsiHub3.ProjetoWebTDD.TestNG;
 
-import static org.junit.Assert.assertEquals;
-
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.AssertJUnit;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -16,11 +15,9 @@ import com.aventstack.extentreports.ExtentTest;
 
 import br.com.RsiHub3.ProjetoTDD.Report.ExtentReport;
 import br.com.RsiHub3.ProjetoTDD.Suporte.GerenciandoChrome;
-import br.com.RsiHub3.ProjetoWebTDD.Pages.PaginaDeCadastro;
 import br.com.RsiHub3.ProjetoWebTDD.Pages.PaginaInicial;
 
-public class TestCadastroNG {
-  
+public class TesteLogin {
 	private WebDriver driver;
 	private ExtentTest test;
 	
@@ -36,21 +33,15 @@ public class TestCadastroNG {
 	
 	
 	@Test
-	public void PreencherCadastroCOMSucesso () throws InterruptedException {
-		new PaginaInicial(driver).clicarJanelaDeLogin().clicarCreateNewAccount()
-		.fazerCadastro("VictorV17", "Abc4", "victorV17@gmail.com", "Victor", "Albano",
-				"11953459777", "Brazil", "Santo André", "Rua natal", "SP", "09030000");
-		assertEquals("VictorV17", new PaginaInicial(driver).validacaoLoginEfetuado());
-		test = ExtentReport.IniciandoReportTeste("PreencherCadastroCOMSucesso");
+	public void TesteLoginSEMSucesso () throws Exception{
+		AssertJUnit.assertEquals("Incorrect user name or password.", new PaginaInicial(driver).preencherLogin(2, 2).esperarPorMensagemDeValidacao());
+		test = ExtentReport.IniciandoReportTeste("TesteLoginSEMSucesso");
 	}
 	
 	@Test
-	public void PreencherCadastroSEMSucesso () {
-		new PaginaInicial(driver).clicarJanelaDeLogin().clicarCreateNewAccount()
-		.fazerCadastroSemSucesso("rodrigo", "Abc4", "rodrigo1@gmail.com", "Rodrigo", "Morais",
-				"11990909898", "Brazil", "Santo André", "Rua natal", "SP", "09030000");
-		assertEquals("User name already exists", new PaginaDeCadastro(driver).mensagemCadastroSemSucesso());
-		test = ExtentReport.IniciandoReportTeste("PreencherCadastroSEMSucesso");
+	public void LoginCOMSucesso () throws Exception {
+		AssertJUnit.assertEquals("Roger", new PaginaInicial(driver).preencherLogin(1, 1).validacaoLoginEfetuado());
+		test = ExtentReport.IniciandoReportTeste("TesteLoginCOMSucesso");
 	}
 	
 	@AfterMethod
