@@ -10,6 +10,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.Constant;
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.ExcelUtils;
+
 public class PaginaDeCadastro extends BasePage{
 
 	public PaginaDeCadastro(WebDriver driver) {
@@ -17,37 +20,35 @@ public class PaginaDeCadastro extends BasePage{
 	}
 	
 	//Funcional
-	public PaginaInicial fazerCadastro (String username, String password, String email, String nome, String sobrenome,
-			String telefone, String pais, String cidade, String endereco, String estado, String cep ) {
-		digitarUserName(username);
-		digitarPasswordEConfirmacao(password);
-		digitarEmail(email);
-		digitarPrimeiroNome(nome);
-		digitarSobrenome(sobrenome);
-		digitarTelefone(telefone);
-		selecionarComboBox(pais);
-		digitarCidade(cidade);
-		digitarEndereco(endereco);
-		digitarEstado(estado);
-		digitarCep(cep);
+	public PaginaInicial fazerCadastro () throws Exception {
+		digitarUserName(getUserNameCorreto());
+		digitarPasswordEConfirmacao(getSenha());
+		digitarEmail(getEmailCorreto());
+		digitarPrimeiroNome(getFirstName());
+		digitarSobrenome(getLastName());
+		digitarTelefone(getPhoneNumber());
+		selecionarComboBox();
+		digitarCidade(getCity());
+		digitarEndereco(getAdress());
+		digitarEstado(getState());
+		digitarCep(getCep());
 		aceitarTermosDeUso();
 		confirmarCadastro();
 		return new PaginaInicial(driver);
 	}
 	
-	public PaginaDeCadastro fazerCadastroSemSucesso (String username, String password, String email, String nome, String sobrenome,
-			String telefone, String pais, String cidade, String endereco, String estado, String cep ) {
-		digitarUserName(username);
-		digitarPasswordEConfirmacao(password);
-		digitarEmail(email);
-		digitarPrimeiroNome(nome);
-		digitarSobrenome(sobrenome);
-		digitarTelefone(telefone);
-		selecionarComboBox(pais);
-		digitarCidade(cidade);
-		digitarEndereco(endereco);
-		digitarEstado(estado);
-		digitarCep(cep);
+	public PaginaDeCadastro fazerCadastroSemSucesso () throws Exception {
+		digitarUserName(getUserNamErrado());
+		digitarPasswordEConfirmacao(getSenha());
+		digitarEmail(getEmailErrado());
+		digitarPrimeiroNome(getFirstName());
+		digitarSobrenome(getLastName());
+		digitarTelefone(getPhoneNumber());
+		selecionarComboBox();
+		digitarCidade(getCity());
+		digitarEndereco(getAdress());
+		digitarEstado(getState());
+		digitarCep(getCep());
 		aceitarTermosDeUso();
 		confirmarCadastro();
 		return this;
@@ -86,7 +87,8 @@ public class PaginaDeCadastro extends BasePage{
 		return this;
 	}
 	
-	private PaginaDeCadastro selecionarComboBox (String pais) {
+	private PaginaDeCadastro selecionarComboBox () throws Exception {
+		String pais = getCountry();
 		new Select(driver.findElement(By.name("countryListboxRegisterPage"))).selectByVisibleText(pais);
 		return this;
 	}
@@ -130,5 +132,73 @@ public class PaginaDeCadastro extends BasePage{
 		wait.until(ExpectedConditions.textToBePresentInElement(validacao, "User name already exists"));
 		return driver.findElement(By.xpath("/html/body/div[3]/section/article/sec-form/div[2]/label[1]")).getText();
 	}
+	
+	private String getUserNameCorreto () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 0);
+	}
+	
+	private String getSenha () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 1);
+	}
+	
+	private String getEmailCorreto () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 2);
+	}
+	
+	private String getFirstName () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 3);
+	}
+	
+	private String getLastName () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 4);
+	}
+	
+	private String getPhoneNumber () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 5);
+	}
+	
+	private String getCountry () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 6);
+	}
+	
+	private String getCity () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 7);
+	}
+	
+	private String getAdress () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 8);
+	}
+	
+	private String getState () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 9);
+	}
+	
+	private String getCep () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(1, 10);
+	}
+	
+	private String getUserNamErrado () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(2, 0);
+	}
+	
+	private String getEmailErrado () throws Exception {
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Cadastro");
+		return ExcelUtils.getCellData(2, 2);
+	}
+	
+	
+	
 
 }

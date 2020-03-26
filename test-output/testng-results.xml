@@ -2,58 +2,58 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43409" started-at="2020-03-26T11:39:17 BRT" finished-at="2020-03-26T11:40:01 BRT">
+  <suite name="Default suite" duration-ms="33847" started-at="2020-03-26T17:11:01 BRT" finished-at="2020-03-26T17:11:35 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43409" started-at="2020-03-26T11:39:17 BRT" finished-at="2020-03-26T11:40:01 BRT">
-      <class name="br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin">
-        <test-method status="PASS" signature="setUpReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="setUpReport" is-config="true" duration-ms="73" started-at="2020-03-26T11:39:17 BRT" finished-at="2020-03-26T11:39:17 BRT">
+    <test name="Default test" duration-ms="33847" started-at="2020-03-26T17:11:01 BRT" finished-at="2020-03-26T17:11:35 BRT">
+      <class name="br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial">
+        <test-method status="PASS" signature="setUpReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586]" name="setUpReport" is-config="true" duration-ms="72" started-at="2020-03-26T17:11:01 BRT" finished-at="2020-03-26T17:11:01 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="SetUp" is-config="true" duration-ms="14565" started-at="2020-03-26T11:39:17 BRT" finished-at="2020-03-26T11:39:32 BRT">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586]" name="SetUp" is-config="true" duration-ms="14524" started-at="2020-03-26T17:11:01 BRT" finished-at="2020-03-26T17:11:15 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="LoginCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="LoginCOMSucesso" duration-ms="6432" started-at="2020-03-26T11:39:32 BRT" finished-at="2020-03-26T11:39:38 BRT">
+        <test-method status="PASS" signature="PesquisaPelaTelaInicialCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586]" name="PesquisaPelaTelaInicialCOMSucesso" duration-ms="3297" started-at="2020-03-26T17:11:15 BRT" finished-at="2020-03-26T17:11:19 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginCOMSucesso -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="tearDown" is-config="true" duration-ms="1483" started-at="2020-03-26T11:39:38 BRT" finished-at="2020-03-26T11:39:40 BRT">
+        </test-method> <!-- PesquisaPelaTelaInicialCOMSucesso -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586]" name="tearDown" is-config="true" duration-ms="1163" started-at="2020-03-26T17:11:19 BRT" finished-at="2020-03-26T17:11:20 BRT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginCOMSucesso status=SUCCESS method=TesteLogin.LoginCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586] output={null}]]]>
+                <![CDATA[[TestResult name=PesquisaPelaTelaInicialCOMSucesso status=SUCCESS method=TestePesquisaTelaInicial.PesquisaPelaTelaInicialCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="SetUp" is-config="true" duration-ms="13514" started-at="2020-03-26T11:39:40 BRT" finished-at="2020-03-26T11:39:53 BRT">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586]" name="SetUp" is-config="true" duration-ms="13632" started-at="2020-03-26T17:11:20 BRT" finished-at="2020-03-26T17:11:33 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="TesteLoginSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="TesteLoginSEMSucesso" duration-ms="6048" started-at="2020-03-26T11:39:53 BRT" finished-at="2020-03-26T11:40:00 BRT">
+        <test-method status="PASS" signature="PesquisaPelaTelaInicialSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586]" name="PesquisaPelaTelaInicialSEMSucesso" duration-ms="78" started-at="2020-03-26T17:11:33 BRT" finished-at="2020-03-26T17:11:34 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TesteLoginSEMSucesso -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="tearDown" is-config="true" duration-ms="1342" started-at="2020-03-26T11:40:00 BRT" finished-at="2020-03-26T11:40:01 BRT">
+        </test-method> <!-- PesquisaPelaTelaInicialSEMSucesso -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586]" name="tearDown" is-config="true" duration-ms="1129" started-at="2020-03-26T17:11:34 BRT" finished-at="2020-03-26T17:11:35 BRT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TesteLoginSEMSucesso status=SUCCESS method=TesteLogin.TesteLoginSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586] output={null}]]]>
+                <![CDATA[[TestResult name=PesquisaPelaTelaInicialSEMSucesso status=SUCCESS method=TestePesquisaTelaInicial.PesquisaPelaTelaInicialSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="tearDownReport" is-config="true" duration-ms="197" started-at="2020-03-26T11:40:01 BRT" finished-at="2020-03-26T11:40:01 BRT">
+        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial@12028586]" name="tearDownReport" is-config="true" duration-ms="208" started-at="2020-03-26T17:11:35 BRT" finished-at="2020-03-26T17:11:35 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin -->
+      </class> <!-- br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

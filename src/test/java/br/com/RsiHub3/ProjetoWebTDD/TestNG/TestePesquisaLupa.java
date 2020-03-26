@@ -1,19 +1,19 @@
 package br.com.RsiHub3.ProjetoWebTDD.TestNG;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.testng.AssertJUnit;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -21,8 +21,9 @@ import com.aventstack.extentreports.ExtentTest;
 import br.com.RsiHub3.ProjetoTDD.Utilitarios.ExtentReport;
 import br.com.RsiHub3.ProjetoTDD.Utilitarios.GerenciandoChrome;
 import br.com.RsiHub3.ProjetoWebTDD.Pages.PaginaInicial;
+import br.com.RsiHub3.ProjetoWebTDD.Pages.PaginaPesquisaMouse;
 
-public class TesteLogin {
+public class TestePesquisaLupa {
 	
 	private WebDriver driver;
 	private ExtentTest test;
@@ -30,7 +31,7 @@ public class TesteLogin {
 	
 	@BeforeSuite
 	public void setUpReport () {
-		ExtentReport.configurandoReport("Login");
+		ExtentReport.configurandoReport("PesquisaLupa");
 	}
 	
 	@BeforeMethod
@@ -39,17 +40,18 @@ public class TesteLogin {
 	}
 	
 	@Test
-	public void TesteLoginSEMSucesso () throws Exception{
-		nomeDoTeste = "Cenario NEGATIVO";
-		String mensagem = new PaginaInicial(driver).preencherLogin(2, 2).esperarPorMensagemDeValidacao();
-		assertEquals("Incorrect user name or password.", mensagem);
+	public void PesquisaLupaCOMSucesso () {
+		nomeDoTeste = "Cenario POSITIVO";
+		String mensagemValidacao = new PaginaInicial(driver).pesquisaLupaMouse("Mouse").selecionandoMouseEValidando();
+		assertEquals("HP USB 3 BUTTON OPTICAL MOUSE", mensagemValidacao);
 	}
 	
 	@Test
-	public void LoginCOMSucesso () throws Exception {
-		nomeDoTeste = "Cenario POSITIVO";
-		String mensagem = new PaginaInicial(driver).preencherLogin(1, 1).validacaoLoginEfetuado();
-		assertEquals("Roger", mensagem);
+	public void PesquisaLupaSEMSucesso () {
+		nomeDoTeste = "Cenario NEGATIVO";
+		String mensagemValidacao = new PaginaInicial(driver).pesquisaLupaMouse("Produto").mensagemProdutoNaoEncontrado();
+		new PaginaPesquisaMouse(driver).EsperaParaPrint();
+		assertEquals("No results for \"Produto\"", mensagemValidacao);
 	}
 	
 	@AfterMethod

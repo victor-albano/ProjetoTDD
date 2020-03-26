@@ -1,4 +1,4 @@
-package br.com.RsiHub3.ProjetoTDD.Suporte;
+package br.com.RsiHub3.ProjetoTDD.Utilitarios;
 
 
 import java.time.Duration;

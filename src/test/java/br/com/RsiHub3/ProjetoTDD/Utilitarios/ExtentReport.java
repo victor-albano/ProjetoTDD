@@ -1,4 +1,4 @@
-package br.com.RsiHub3.ProjetoTDD.Report;
+package br.com.RsiHub3.ProjetoTDD.Utilitarios;
 
 import java.io.IOException;
 
@@ -9,8 +9,6 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-
-import br.com.RsiHub3.ProjetoTDD.Suporte.Screenshot;
 
 public class ExtentReport {
 

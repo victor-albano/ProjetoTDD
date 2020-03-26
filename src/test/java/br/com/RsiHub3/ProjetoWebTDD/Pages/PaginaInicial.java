@@ -12,8 +12,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 
-import br.com.RsiHub3.ProjetoTDD.Excel.Constant;
-import br.com.RsiHub3.ProjetoTDD.Excel.ExcelUtils;
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.Constant;
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.ExcelUtils;
 
 public class PaginaInicial extends BasePage{
 
@@ -22,7 +22,6 @@ public class PaginaInicial extends BasePage{
 	}
 	
 	public PaginaInicial preencherLogin (int linha , int linhaSenha) throws Exception {
-		Thread.sleep(5000);
 		clicarJanelaDeLogin();
 		pegarUsuarioExcel(linha);
 		pegarSenhaExcel(linhaSenha);
@@ -128,14 +127,13 @@ public class PaginaInicial extends BasePage{
 	}
 	
 	private PaginaInicial pegarUsuarioExcel (int linha) throws Exception {
-		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Planilha1");
-		//ExcelUtils.getCellData(linha, 0);
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Login");
 		driver.findElement(By.name("username")).sendKeys(ExcelUtils.getCellData(linha, 0));
 		return this;
 	}
 	
 	private PaginaInicial pegarSenhaExcel (int linhaSenha ) throws Exception {
-		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Planilha1");
+		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Login");
 		driver.findElement(By.name("password")).sendKeys(ExcelUtils.getCellData(linhaSenha, 1));
 		return this;
 	}
