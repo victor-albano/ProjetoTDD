@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 26, 2020 09:52:45 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 26, 2020 11:39:17 AM</span>
 				</a>
 			</li>
 			<li>
@@ -72,7 +72,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -123,10 +122,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -138,10 +137,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -156,67 +155,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Teste</span>
-						<span class='test-time'>Mar 26, 2020 09:53:32 AM</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar 26, 2020 09:53:32 AM</span>
-	<span class='label end-time'>Mar 26, 2020 09:53:32 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+612ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:53:32 AM</td>
-					<td class='step-details'>Caso de teste FALHOU: LoginCOMSucesso</td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:53:32 AM</td>
-					<td class='step-details'>Caso de teste FALHOU: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='hi-user containMiniTitle ng-binding']"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SKAR1201142', ip: '192.168.1.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\VICTOR~1.ALB\AppData\Local\Temp\scoped_dir12708_1769772698}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:50017}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
-Session ID: 3bcea9db8c0ef237d19c3b64fd80bace
-*** Element info: {Using=xpath, value=//span[@class='hi-user containMiniTitle ng-binding']}</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='C:\Users\victor.albano\eclipse-workspace\ProjetoWebTDD/Screenshot/LoginCOMSucesso.png' width='10%' src='C:\Users\victor.albano\eclipse-workspace\ProjetoWebTDD/Screenshot/LoginCOMSucesso.png' data-src='C:\Users\victor.albano\eclipse-workspace\ProjetoWebTDD/Screenshot/LoginCOMSucesso.png'></li>
-							</ul>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>Teste</span>
-						<span class='test-time'>Mar 26, 2020 09:53:49 AM</span>
+						<span class='test-name'>Cenario POSITIVO</span>
+						<span class='test-time'>Mar 26, 2020 11:39:38 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 26, 2020 09:53:49 AM</span>
-	<span class='label end-time'>Mar 26, 2020 09:53:50 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+496ms</span>
+	<span class='label start-time'>Mar 26, 2020 11:39:38 AM</span>
+	<span class='label end-time'>Mar 26, 2020 11:39:39 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+623ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -230,7 +179,44 @@ Session ID: 3bcea9db8c0ef237d19c3b64fd80bace
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:53:50 AM</td>
+					<td class='timestamp'>11:39:39 AM</td>
+					<td class='step-details'>Caso de teste PASSOU: LoginCOMSucesso</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Users\victor.albano\eclipse-workspace\ProjetoWebTDD/Screenshot/LoginCOMSucesso.png' width='10%' src='C:\Users\victor.albano\eclipse-workspace\ProjetoWebTDD/Screenshot/LoginCOMSucesso.png' data-src='C:\Users\victor.albano\eclipse-workspace\ProjetoWebTDD/Screenshot/LoginCOMSucesso.png'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Cenario NEGATIVO</span>
+						<span class='test-time'>Mar 26, 2020 11:40:00 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 26, 2020 11:40:00 AM</span>
+	<span class='label end-time'>Mar 26, 2020 11:40:00 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+509ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>11:40:00 AM</td>
 					<td class='step-details'>Caso de teste PASSOU: TesteLoginSEMSucesso</td>
 				</tr>
 			</tbody>
@@ -282,25 +268,25 @@ Session ID: 3bcea9db8c0ef237d19c3b64fd80bace
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 26, 2020 09:52:45 AM</div>
+					<div class='panel-lead'>Mar 26, 2020 11:39:17 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 26, 2020 09:53:51 AM</div>
+			 		<div class='panel-lead'>Mar 26, 2020 11:40:01 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 6s+201ms</div>
+					<div class='panel-lead'>0h 0m 43s+476ms</div>
 				</div>
 			</div>
 		</div>
@@ -313,22 +299,22 @@ Session ID: 3bcea9db8c0ef237d19c3b64fd80bace
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 1,
+				passParent: 2,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 1,
-				failChild: 2,
+				passChild: 2,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

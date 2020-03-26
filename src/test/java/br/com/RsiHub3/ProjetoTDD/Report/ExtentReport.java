@@ -18,9 +18,9 @@ public class ExtentReport {
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	
-	public static void configurandoReport() {
+	public static void configurandoReport(String nomeDoReport) {
 		
-		htmlReporter = new ExtentHtmlReporter("src/test/resources/Report/reportsTestes.html");
+		htmlReporter = new ExtentHtmlReporter("src/test/resources/Report/" + nomeDoReport + ".html");
 		
 		htmlReporter.config().setDocumentTitle("Report");
 		htmlReporter.config().setReportName("Report");

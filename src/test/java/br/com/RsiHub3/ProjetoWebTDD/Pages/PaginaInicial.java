@@ -22,6 +22,7 @@ public class PaginaInicial extends BasePage{
 	}
 	
 	public PaginaInicial preencherLogin (int linha , int linhaSenha) throws Exception {
+		Thread.sleep(5000);
 		clicarJanelaDeLogin();
 		pegarUsuarioExcel(linha);
 		pegarSenhaExcel(linhaSenha);

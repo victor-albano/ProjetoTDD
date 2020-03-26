@@ -26,7 +26,8 @@ public class TestCadastroNG {
 	
 	@BeforeTest
 	public void setUpReport () {
-		ExtentReport.configurandoReport();
+		ExtentReport.configurandoReport("Cadastro");
+	//	test = new ExtentReport(test);
 	}
 	
 	@BeforeMethod
