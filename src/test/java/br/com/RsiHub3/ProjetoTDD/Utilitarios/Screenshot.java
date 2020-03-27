@@ -15,7 +15,6 @@ public class Screenshot {
 		File src = tirarPrint.getScreenshotAs(OutputType.FILE);
 		String caminhoDoArquivo = System.getProperty("user.dir") + "/Screenshot/" + nomePrint + ".png";
 		
-	
 		File destino = new File(caminhoDoArquivo);
 
 		try {

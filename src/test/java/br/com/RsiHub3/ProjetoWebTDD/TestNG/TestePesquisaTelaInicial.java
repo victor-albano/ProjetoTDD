@@ -16,7 +16,8 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentTest;
 
 import br.com.RsiHub3.ProjetoTDD.Utilitarios.ExtentReport;
-import br.com.RsiHub3.ProjetoTDD.Utilitarios.GerenciandoChrome;
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.DriverFactory;
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.SmartWaits;
 import br.com.RsiHub3.ProjetoWebTDD.Pages.PaginaInicial;
 
 public class TestePesquisaTelaInicial {
@@ -32,27 +33,32 @@ public class TestePesquisaTelaInicial {
 	
 	@BeforeMethod
 	public void SetUp () {
-		driver = GerenciandoChrome.abrirPaginaInicial("http://advantageonlineshopping.com/#/");
+		driver = DriverFactory.abrirChrome("http://advantageonlineshopping.com/#/");
+		new SmartWaits(driver).esperarPaginaCarregar();
 	}
 	
 	@Test
 	public void PesquisaPelaTelaInicialCOMSucesso () {
 		nomeDoTeste = "Cenario POSITIVO";
-		String mensagemValidacao = new PaginaInicial(driver).pesquisaTelaInicialMouse().selecionandoMouseEValidando();
+		String mensagemValidacao = new PaginaInicial(driver)
+				.clicarNoIconeMouseTelaInicial()
+				.selecionandoMouseEspecifico()
+				.validandoMouseEspecifico();
 		assertEquals("HP USB 3 BUTTON OPTICAL MOUSE", mensagemValidacao);
 	}
 	
 	@Test
 	public void PesquisaPelaTelaInicialSEMSucesso () {
 		nomeDoTeste = "Cenario NEGATIVO";
-		assertFalse(new PaginaInicial(driver).pesquisaListaTelaInicial(new PaginaInicial(driver).listaProdutosTelaInicial(), "TV"));
+		assertFalse(new PaginaInicial(driver)
+				.pesquisaListaTelaInicial(new PaginaInicial(driver).listaProdutosTelaInicial(), "TV"));
 	}
 	
 	@AfterMethod
 	public void tearDown (ITestResult result) throws IOException {
 		test = ExtentReport.IniciandoReportTeste(nomeDoTeste);
 		ExtentReport.relatorioDeTestes(test, result, driver);
-		GerenciandoChrome.fecharChrome();
+		DriverFactory.fecharChrome();
 	}
 	
 	@AfterSuite

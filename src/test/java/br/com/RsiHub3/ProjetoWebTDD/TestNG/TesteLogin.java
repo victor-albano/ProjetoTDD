@@ -19,7 +19,9 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentTest;
 
 import br.com.RsiHub3.ProjetoTDD.Utilitarios.ExtentReport;
-import br.com.RsiHub3.ProjetoTDD.Utilitarios.GerenciandoChrome;
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.ExtraindoDadosExcel;
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.DriverFactory;
+import br.com.RsiHub3.ProjetoTDD.Utilitarios.SmartWaits;
 import br.com.RsiHub3.ProjetoWebTDD.Pages.PaginaInicial;
 
 public class TesteLogin {
@@ -27,6 +29,7 @@ public class TesteLogin {
 	private WebDriver driver;
 	private ExtentTest test;
 	private String nomeDoTeste;
+	private ExtraindoDadosExcel excel = new ExtraindoDadosExcel();
 	
 	@BeforeSuite
 	public void setUpReport () {
@@ -35,28 +38,40 @@ public class TesteLogin {
 	
 	@BeforeMethod
 	public void SetUp () {
-		driver = GerenciandoChrome.abrirPaginaInicial("http://advantageonlineshopping.com/#/");
+		driver = DriverFactory.abrirChrome("http://advantageonlineshopping.com/#/");
+		new SmartWaits(driver).esperarPaginaCarregar();
 	}
 	
 	@Test
 	public void TesteLoginSEMSucesso () throws Exception{
 		nomeDoTeste = "Cenario NEGATIVO";
-		String mensagem = new PaginaInicial(driver).preencherLogin(2, 2).esperarPorMensagemDeValidacao();
+			String mensagem = new PaginaInicial(driver)
+			.clicarJanelaDeLogin()
+			.digitarLogin(excel.pegarUsuarioInvalidoExcel())
+			.digitarSenha(excel.pegarSenhaInvalidaExcel())
+			.clicarSignIn()
+			.esperarPorMensagemDeValidacao();
 		assertEquals("Incorrect user name or password.", mensagem);
 	}
 	
 	@Test
 	public void LoginCOMSucesso () throws Exception {
 		nomeDoTeste = "Cenario POSITIVO";
-		String mensagem = new PaginaInicial(driver).preencherLogin(1, 1).validacaoLoginEfetuado();
+		String mensagem = new PaginaInicial(driver)
+			.clicarJanelaDeLogin()
+			.digitarLogin(excel.pegarUsuarioValidoExcel())
+			.digitarSenha(excel.pegarSenhaValidaExcel())
+			.clicarSignIn()
+			.validacaoLoginEfetuado();
 		assertEquals("Roger", mensagem);
+		driver.quit();
 	}
 	
 	@AfterMethod
 	public void tearDown (ITestResult result) throws IOException {
 		test = ExtentReport.IniciandoReportTeste(nomeDoTeste);
 		ExtentReport.relatorioDeTestes(test, result, driver);
-		GerenciandoChrome.fecharChrome();
+		DriverFactory.fecharChrome();
 	}
 	
 	@AfterSuite

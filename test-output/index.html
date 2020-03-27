@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\victor.albano\AppData\Local\Temp\testng-eclipse--1238312992\testng-customsuite.xml</span>
+                    <span>C:\Users\victor.albano\AppData\Local\Temp\testng-eclipse--1426900644\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin" hash-for-method="TesteLoginSEMSucesso">TesteLoginSEMSucesso</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial" hash-for-method="PesquisaPelaTelaInicialCOMSucesso">PesquisaPelaTelaInicialCOMSucesso</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial" hash-for-method="PesquisaPelaTelaInicialSEMSucesso">PesquisaPelaTelaInicialSEMSucesso</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin" hash-for-method="LoginCOMSucesso">LoginCOMSucesso</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,24 +131,79 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial</span>
+              <img src="skipped.png"/>
+              <span class="class-name">br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="PesquisaPelaTelaInicialCOMSucesso">
-                  </a> <!-- PesquisaPelaTelaInicialCOMSucesso -->
-                  <span class="method-name">PesquisaPelaTelaInicialCOMSucesso</span>
+                  <a name="TesteLoginSEMSucesso">
+                  </a> <!-- TesteLoginSEMSucesso -->
+                  <span class="method-name">TesteLoginSEMSucesso</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SKAR1201142&apos;, ip: &apos;192.168.1.22&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
+	at br.com.RsiHub3.ProjetoTDD.Utilitarios.Screenshot.tirarPrint(Screenshot.java:15)
+	at br.com.RsiHub3.ProjetoTDD.Utilitarios.ExtentReport.relatorioDeTestes(ExtentReport.java:38)
+	at br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin.tearDown(TesteLogin.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
+	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:671)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:655)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="PesquisaPelaTelaInicialSEMSucesso">
-                  </a> <!-- PesquisaPelaTelaInicialSEMSucesso -->
-                  <span class="method-name">PesquisaPelaTelaInicialSEMSucesso</span>
+                  <a name="LoginCOMSucesso">
+                  </a> <!-- LoginCOMSucesso -->
+                  <span class="method-name">LoginCOMSucesso</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +211,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\victor.albano\AppData\Local\Temp\testng-eclipse--1238312992\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\victor.albano\AppData\Local\Temp\testng-eclipse--1426900644\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -156,7 +220,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial&quot;/&gt;
+      &lt;class name=&quot;br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -198,13 +262,13 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'PesquisaPelaTelaInicialCOMSucesso')
-data.setCell(0, 2, 'br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial')
-data.setCell(0, 3, 3297);
+data.setCell(0, 1, 'LoginCOMSucesso')
+data.setCell(0, 2, 'br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin')
+data.setCell(0, 3, 3088);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'PesquisaPelaTelaInicialSEMSucesso')
-data.setCell(1, 2, 'br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial')
-data.setCell(1, 3, 78);
+data.setCell(1, 1, 'TesteLoginSEMSucesso')
+data.setCell(1, 2, 'br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin')
+data.setCell(1, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -235,38 +299,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">br.com.RsiHub3.ProjetoWebTDD.TestNG.TestePesquisaTelaInicial</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setUpReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">89 ms</span>
+                <span class="method-start">90 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">PesquisaPelaTelaInicialCOMSucesso</span>
-                <span class="method-start">14614 ms</span>
+                <span class="method-name">LoginCOMSucesso</span>
+                <span class="method-start">15950 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=PesquisaPelaTelaInicialCOMSucesso status=SUCCESS method=TestePesquisaTelaInicial.Pe...)</span>
-                <span class="method-start">17914 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown([TestResult name=LoginCOMSucesso status=SUCCESS method=TesteLogin.LoginCOMSucesso()[pri:0, instance:...)</span>
+                <span class="method-start">19040 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetUp</span>
-                <span class="method-start">19078 ms</span>
+                <span class="method-start">19052 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">PesquisaPelaTelaInicialSEMSucesso</span>
-                <span class="method-start">32710 ms</span>
+                <span class="method-name">TesteLoginSEMSucesso</span>
+                <span class="method-start">19054 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=PesquisaPelaTelaInicialSEMSucesso status=SUCCESS method=TestePesquisaTelaInicial.Pe...)</span>
-                <span class="method-start">32789 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19056 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">33933 ms</span>
+                <span class="method-start">19087 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

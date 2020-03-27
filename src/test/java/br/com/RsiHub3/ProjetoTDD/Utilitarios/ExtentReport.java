@@ -34,6 +34,7 @@ public class ExtentReport {
 	}
 	
 	public static void relatorioDeTestes (ExtentTest teste, ITestResult result, WebDriver driver) throws IOException {
+		
 		test.addScreenCaptureFromPath(Screenshot.tirarPrint(driver, result.getName()));
 		
 		if (result.getStatus() == ITestResult.FAILURE) {

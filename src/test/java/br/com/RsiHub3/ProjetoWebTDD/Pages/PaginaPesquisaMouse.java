@@ -9,10 +9,14 @@ public class PaginaPesquisaMouse extends BasePage {
 	public PaginaPesquisaMouse(WebDriver driver) {
 		super(driver);
 	}
-
-	public String selecionandoMouseEValidando () {
-		driver.findElement(By.xpath("//a[contains(text(),'HP USB 3 Button Optical Mouse')]")).click();
+	
+	public String validandoMouseEspecifico () {
 		return driver.findElement(By.xpath("//h1[@class='roboto-regular screen768 ng-binding']")).getText();
+	}
+	
+	public PaginaPesquisaMouse selecionandoMouseEspecifico () {
+		driver.findElement(By.linkText("HP USB 3 Button Optical Mouse")).click();
+		return this;
 	}
 	
 	public String mensagemProdutoNaoEncontrado () {
@@ -27,5 +31,10 @@ public class PaginaPesquisaMouse extends BasePage {
 	public void EsperaParaPrint () {
 		JavascriptExecutor javaScriptExecutor= (JavascriptExecutor) driver;
 		javaScriptExecutor.executeAsyncScript("window.setTimeout(arguments[arguments.length - 1], 1000);");
+	}
+	
+	public PaginaPesquisaMouse fecharBusca() {
+		driver.findElement(By.xpath("//*[@id=\"search\"]/div/div")).click();
+		return this;
 	}
 }
