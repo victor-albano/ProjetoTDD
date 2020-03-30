@@ -21,12 +21,12 @@ public class DriverFactory {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/ChromeWebDriver/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		driver.get(link);
 		return driver;
 	}
 	
 	public static void fecharChrome () {
-		driver.quit();
+			driver.quit();
 	}
 }

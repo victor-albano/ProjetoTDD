@@ -47,8 +47,8 @@ public class TesteLogin {
 		nomeDoTeste = "Cenario NEGATIVO";
 			String mensagem = new PaginaInicial(driver)
 			.clicarJanelaDeLogin()
-			.digitarLogin(excel.pegarUsuarioInvalidoExcel())
-			.digitarSenha(excel.pegarSenhaInvalidaExcel())
+			.digitarLogin(excel.getUsuarioInvalidoExcel())
+			.digitarSenha(excel.getSenhaInvalidaExcel())
 			.clicarSignIn()
 			.esperarPorMensagemDeValidacao();
 		assertEquals("Incorrect user name or password.", mensagem);
@@ -59,12 +59,11 @@ public class TesteLogin {
 		nomeDoTeste = "Cenario POSITIVO";
 		String mensagem = new PaginaInicial(driver)
 			.clicarJanelaDeLogin()
-			.digitarLogin(excel.pegarUsuarioValidoExcel())
-			.digitarSenha(excel.pegarSenhaValidaExcel())
+			.digitarLogin(excel.getUsuarioValidoExcel())
+			.digitarSenha(excel.getSenhaValidaExcel())
 			.clicarSignIn()
 			.validacaoLoginEfetuado();
 		assertEquals("Roger", mensagem);
-		driver.quit();
 	}
 	
 	@AfterMethod

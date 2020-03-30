@@ -71,22 +71,22 @@ public class ExtraindoDadosExcel {
 		return ExcelUtils.getCellData(2, 2);
 	}
 	
-	public String pegarUsuarioValidoExcel () throws Exception {
+	public String getUsuarioValidoExcel () throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Login");
 		return ExcelUtils.getCellData(1, 0);
 	}
 	
-	public String pegarSenhaValidaExcel () throws Exception {
+	public String getSenhaValidaExcel () throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Login");
 		return ExcelUtils.getCellData(1, 1);	
 	}
 	
-	public String pegarUsuarioInvalidoExcel () throws Exception {
+	public String getUsuarioInvalidoExcel () throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Login");
 		return ExcelUtils.getCellData(2, 0);
 	}
 	
-	public String pegarSenhaInvalidaExcel () throws Exception {
+	public String getSenhaInvalidaExcel () throws Exception {
 		ExcelUtils.setExcelFile(Constant.Path_TestData + Constant.File_TestData , "Login");
 		return ExcelUtils.getCellData(2, 1);	
 	}
