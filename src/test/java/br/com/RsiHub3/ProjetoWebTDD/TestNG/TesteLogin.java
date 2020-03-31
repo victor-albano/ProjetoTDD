@@ -63,7 +63,7 @@ public class TesteLogin {
 			.digitarSenha(excel.getSenhaValidaExcel())
 			.clicarSignIn()
 			.validacaoLoginEfetuado();
-		assertEquals("Roger", mensagem);
+		assertEquals("Victor", mensagem);
 	}
 	
 	@AfterMethod

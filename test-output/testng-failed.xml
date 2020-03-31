@@ -3,16 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro">
+      <class name="br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin">
         <methods>
-          <include name="SetUp"/>
-          <include name="PreencherCadastroCOMSucesso"/>
-          <include name="tearDown"/>
+          <include name="LoginCOMSucesso"/>
           <include name="setUpReport"/>
+          <include name="tearDown"/>
+          <include name="SetUp"/>
           <include name="tearDownReport"/>
-          <include name="PreencherCadastroSEMSucesso"/>
         </methods>
-      </class> <!-- br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro -->
+      </class> <!-- br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

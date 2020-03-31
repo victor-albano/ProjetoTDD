@@ -1,235 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20762" started-at="2020-03-30T09:55:11 BRT" finished-at="2020-03-30T09:55:32 BRT">
+  <suite name="Default suite" duration-ms="35557" started-at="2020-03-31T15:32:36 BRT" finished-at="2020-03-31T15:33:12 BRT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20762" started-at="2020-03-30T09:55:11 BRT" finished-at="2020-03-30T09:55:32 BRT">
-      <class name="br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro">
-        <test-method status="PASS" signature="setUpReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586]" name="setUpReport" is-config="true" duration-ms="72" started-at="2020-03-30T09:55:11 BRT" finished-at="2020-03-30T09:55:11 BRT">
+    <test name="Default test" duration-ms="35557" started-at="2020-03-31T15:32:36 BRT" finished-at="2020-03-31T15:33:12 BRT">
+      <class name="br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin">
+        <test-method status="PASS" signature="setUpReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="setUpReport" is-config="true" duration-ms="79" started-at="2020-03-31T15:32:36 BRT" finished-at="2020-03-31T15:32:36 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586]" name="SetUp" is-config="true" duration-ms="14423" started-at="2020-03-30T09:55:11 BRT" finished-at="2020-03-30T09:55:25 BRT">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="SetUp" is-config="true" duration-ms="15442" started-at="2020-03-31T15:32:36 BRT" finished-at="2020-03-31T15:32:52 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="FAIL" signature="PreencherCadastroCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586]" name="PreencherCadastroCOMSucesso" duration-ms="6260" started-at="2020-03-30T09:55:25 BRT" finished-at="2020-03-30T09:55:32 BRT">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:200)
-at org.openqa.selenium.remote.RemoteWebElement.findElementsByXPath(RemoteWebElement.java:252)
-at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
-at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:167)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:116)
-at br.com.RsiHub3.ProjetoWebTDD.Pages.PaginaDeCadastro.selecionarComboBox(PaginaDeCadastro.java:55)
-at br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro.PreencherCadastroCOMSucesso(TesteCadastro.java:56)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="LoginCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="LoginCOMSucesso" duration-ms="1362" started-at="2020-03-31T15:32:52 BRT" finished-at="2020-03-31T15:32:53 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PreencherCadastroCOMSucesso -->
-        <test-method status="FAIL" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586]" name="tearDown" is-config="true" duration-ms="32" started-at="2020-03-30T09:55:32 BRT" finished-at="2020-03-30T09:55:32 BRT">
+        </test-method> <!-- LoginCOMSucesso -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="tearDown" is-config="true" duration-ms="1549" started-at="2020-03-31T15:32:53 BRT" finished-at="2020-03-31T15:32:55 BRT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PreencherCadastroCOMSucesso status=FAILURE method=TesteCadastro.PreencherCadastroCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586] output={null}]]]>
+                <![CDATA[[TestResult name=LoginCOMSucesso status=SUCCESS method=TesteLogin.LoginCOMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SKAR1201142', ip: '192.168.1.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\VICTOR~1.ALB\AppData\Local\Temp\scoped_dir3688_250876236}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51834}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
-Session ID: 030167b0244a0c4fd3e87bf503bc6e74]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SKAR1201142', ip: '192.168.1.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\VICTOR~1.ALB\AppData\Local\Temp\scoped_dir3688_250876236}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51834}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
-Session ID: 030167b0244a0c4fd3e87bf503bc6e74
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
-at br.com.RsiHub3.ProjetoTDD.Utilitarios.Screenshot.tirarPrint(Screenshot.java:15)
-at br.com.RsiHub3.ProjetoTDD.Utilitarios.ExtentReport.relatorioDeTestes(ExtentReport.java:38)
-at br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro.tearDown(TesteCadastro.java:91)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:671)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:655)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586]" name="SetUp" is-config="true" duration-ms="-1585572932125" started-at="2020-03-30T09:55:32 BRT" finished-at="1969-12-31T21:00:00 BRT">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="SetUp" is-config="true" duration-ms="14703" started-at="2020-03-31T15:32:55 BRT" finished-at="2020-03-31T15:33:09 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="SKIP" signature="PreencherCadastroSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586]" name="PreencherCadastroSEMSucesso" duration-ms="0" started-at="2020-03-30T09:55:32 BRT" finished-at="2020-03-30T09:55:32 BRT">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SKAR1201142', ip: '192.168.1.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\VICTOR~1.ALB\AppData\Local\Temp\scoped_dir3688_250876236}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51834}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
-Session ID: 030167b0244a0c4fd3e87bf503bc6e74]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SKAR1201142', ip: '192.168.1.22', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\VICTOR~1.ALB\AppData\Local\Temp\scoped_dir3688_250876236}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:51834}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
-Session ID: 030167b0244a0c4fd3e87bf503bc6e74
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:382)
-at br.com.RsiHub3.ProjetoTDD.Utilitarios.Screenshot.tirarPrint(Screenshot.java:15)
-at br.com.RsiHub3.ProjetoTDD.Utilitarios.ExtentReport.relatorioDeTestes(ExtentReport.java:38)
-at br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro.tearDown(TesteCadastro.java:91)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:695)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:671)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:655)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="TesteLoginSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="TesteLoginSEMSucesso" duration-ms="1236" started-at="2020-03-31T15:33:09 BRT" finished-at="2020-03-31T15:33:11 BRT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PreencherCadastroSEMSucesso -->
-        <test-method status="SKIP" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586]" name="tearDown" is-config="true" duration-ms="-1585572932130" started-at="2020-03-30T09:55:32 BRT" finished-at="1969-12-31T21:00:00 BRT">
+        </test-method> <!-- TesteLoginSEMSucesso -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="tearDown" is-config="true" duration-ms="1240" started-at="2020-03-31T15:33:11 BRT" finished-at="2020-03-31T15:33:12 BRT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TesteLoginSEMSucesso status=SUCCESS method=TesteLogin.TesteLoginSEMSucesso()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="tearDownReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro@12028586]" name="tearDownReport" is-config="true" duration-ms="-1585572932206" started-at="2020-03-30T09:55:32 BRT" finished-at="1969-12-31T21:00:00 BRT">
+        <test-method status="PASS" signature="tearDownReport()[pri:0, instance:br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin@12028586]" name="tearDownReport" is-config="true" duration-ms="197" started-at="2020-03-31T15:33:12 BRT" finished-at="2020-03-31T15:33:12 BRT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-      </class> <!-- br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteCadastro -->
+      </class> <!-- br.com.RsiHub3.ProjetoWebTDD.TestNG.TesteLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
